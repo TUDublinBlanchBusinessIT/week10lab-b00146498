@@ -3,18 +3,14 @@ include("finalStepHeader.html");
 
 session_start();
 
-// Echo the passenger's firstname from the appropriate session variable
 echo "Passenger's First Name: " . $_SESSION['passengerFN'] . "<br>";
 
-// Echo the passenger's surname from the appropriate session variable
 echo "Passenger's Surname: " . $_SESSION['passengerSN'] . "<br>";
 
-// Check if the luggage session variable is set
 if (isset($_SESSION['luggage'])) {
-    // Echo the amount of bags under ten kilos the passenger is bringing
+    
     echo "Bags Under 10kg: " . $_SESSION['subTenKG'] . "<br>";
 
-    // Echo the amount of bags over ten kilos the passenger is bringing
     echo "Bags Over 10kg: " . $_SESSION['overTenKG'] . "<br>";
 }
 
