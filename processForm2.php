@@ -2,7 +2,7 @@
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Gather data from the form
+  
     $subTenKG = $_POST['subTenKG'];
     $overTenKG = $_POST['overTenKG'];
 
